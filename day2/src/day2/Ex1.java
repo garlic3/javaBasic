@@ -16,7 +16,7 @@ public class Ex1 {
 	삼항 연산자 (조건식)? true: false
 	
 	a++ 후위형
-	++a 전위
+	++a 전위형
 	
 	 */
 			
