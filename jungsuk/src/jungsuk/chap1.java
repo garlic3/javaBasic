@@ -1,3 +1,4 @@
+package jungsuk;
 import java.util.Scanner;
 
 public class chap1 {

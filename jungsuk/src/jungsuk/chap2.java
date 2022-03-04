@@ -1,3 +1,4 @@
+package jungsuk;
 
 public class chap2 {
 
