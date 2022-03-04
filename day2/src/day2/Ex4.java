@@ -26,7 +26,15 @@ public class Ex4 {
 //			System.out.println("");
 //		}
 	
-//		정삼각형 별모양 찍
+//		정삼각형 별모양 찍기
+		for (int i = 1; i < 11; i++) {
+			for(int j = 1; j < i; j++) {
+				if (j == 5) {
+				System.out.print("*");
+				}
+			}
+			System.out.println("");
+		}
 	
 		int scores[] = {70,60,55,75,95,90,80,80,85,100};
 		int sum = 0;
