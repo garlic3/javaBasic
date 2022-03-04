@@ -98,15 +98,20 @@ public class Ex2 {
 			}
 			if(menu <0 || menu >3){
 				System.out.println("메뉴를 잘못 선택하셨습니다(종료:0)");
+				continue;
 			}
 			
 			if( menu <= 3) {
 				System.out.printf("선택하신 메뉴는 %d번 입니다%n", menu);
-				continue;
 			}
 	
 		}
 
+	
+		
+		
+		
+		
 		
 		
 	}
