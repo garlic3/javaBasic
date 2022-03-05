@@ -1,7 +1,7 @@
 package jungsuk;
 import java.util.Scanner;
 
-public class chap1 {
+public class Chap1 {
 
 	public static void main(String[] args) {
 //		문자열 + 어떤 타입 = 문자열 
