@@ -1,5 +1,7 @@
 package jungsuk;
 
+import java.util.Scanner;
+
 public class Chap3 {
 
 	public static void main(String[] args) {
@@ -16,7 +18,7 @@ public class Chap3 {
  */
 
 		if (true)
-			System.out.println("축하합니다"); //실행구문이 한문장일때 괄호 생략가능 -> 헷갈리니까 생략하지 말
+			System.out.println("축하합니다"); //실행구문이 한문장일때 괄호 생략가능 -> 헷갈리니까 생략하지 말것 
 		
 
 /*
@@ -65,12 +67,13 @@ public class Chap3 {
  */
 		
 //	별찍기
-//	for(int i = 1; i <= 5; i++) {
-//		for(int j = 1; j <= 10; j++) {
-//			System.out.printf("*");
-//		}
-//		System.out.println();
-//	}
+		
+	for(int i = 1; i <= 5; i++) {
+		for(int j = 1; j <= 10; j++) {
+			System.out.printf("*");
+		}
+		System.out.println();
+	}
 	
 	for(int a = 1; a <= 5; a++) {
 		for(int b = 1; b <= a; b++) {
@@ -86,36 +89,70 @@ public class Chap3 {
 		}
 		System.out.println();
 	}
-		
+		   
+
 	
-/*     *
-	  ***
-	 *****
-	*******
-   **********
-   
- 정삼각형 만들기 
- 
- i = 1 j = 1 / 5번째 
- i = 2 j = 3 / 4,5,6번째 
- i = 3 j = 5 / 3,4,5,6,7
- i = 4 j = 7 / 2,3,4,5,6,7,8
- i = 5 j = 9 
- 
-*/   
-	
-	for(int i = 1; i <= 5; i++) {
-		for(int j = 1; j <=10; j++) {
-			if (j == 5) {
-				System.out.print("*");
-			}
-			else {
-				System.out.print(" ");
-			}
+/*
+  while (조건식) {
+  	실행구문
+  }	
+ */
+		Scanner sc = new Scanner(System.in);
+		String tmp = sc.nextLine();
+		int num = 0, sum = 0;
+		num = Integer.parseInt(tmp);
+		while(num!=0) {
+			sum += num%10;
+			// 나머지 연산자로 마지막 자리값 얻기
+			System.out.printf("sum=%3d num=%dn", sum, num);
+			num  /= 10;
+			
 		}
-		System.out.println();
-	}
-   
+		System.out.println(sum);
+		
+		
+		
+		for(num = 12345; num>=0; num /= 10) {
+			sum += num %10;
+			
+		}
+/*
+ * 
+do while
+do { 
+	실행구문
+	} while (조건식);
+	
+-> 사용자 입력 받을때 유용 
+
+ */
+		System.out.println("1~100사이의 정수를 입력하세요");
+		int answer = (int)((Math.random()*100)+1);
+		System.out.println(answer);
+		int user = 0;
+		
+		do {
+			Scanner sc = new Scanner(System.in);
+			user = sc.nextInt();
+			if (user > answer) {
+				System.out.println("더 작은 숫자입니다");
+			}
+			if (user < answer) {
+				System.out.println("더 큰 숫자입니다");
+			}
+		} while(answer != user);
+		System.out.println("정답입니다");
+		
+/*
+ 반복문에 이름 붙여서 하나 이상의 반복문 벗어나기	
+ 반복문 앞에 루프이름 : for~ / while ~ 써주고
+ break 루프이름; 으로 사용 	
+ */
+
+		 
+		 
+		 
+		 
 	}
 
 }
