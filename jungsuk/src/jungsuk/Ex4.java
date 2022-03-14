@@ -43,7 +43,7 @@ public class Ex4 {
 		System.out.println("average=" + average);
 		
 		
-		//5-5 **
+		//5-5 
 		
 		int[] ballArr = {1,2,3,4,5,6,7,8,9};
 		int[] ball3 = new int[3];
@@ -63,7 +63,7 @@ public class Ex4 {
 			System.out.println(ball3[c]);
 		}
 		
-		//5-6 **
+		//5-6 
 		
 		String[] words = {"television", "computer", "mouse", "phone"};
 		Scanner sc = new Scanner(System.in);
