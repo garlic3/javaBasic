@@ -130,6 +130,30 @@ List<E> 자체가 제네릭 인터페이스이므로 이를 구현한 클래스�
 		
 		// 9. size 메서드 -> 크기 확인
 		System.out.println(bList2.size());
+
+		// 10. get 메서드 -> 해당 인덱스의 값 가져오기
+		System.out.println(bList1.get(0));
+		System.out.println(bList1.get(2));
+	
+		// q1
+		System.out.println(bList1.size());
+		for (int i = 0; i < bList1.size(); i++) {
+			System.out.println(i + "번째: " + bList1.get(i));
+		}
+		
+		
+		/*
+		 Linked List 연결 리스트
+		 List<E>의 모든 공통 특징을 다 가지고 있음(동질 자료, 동적 할당, 추가/변경/삭제 동일 메서드)
+		 
+		 1. LinkedList<E> 는 객체를 생성할 때 저장 용량을 지정할 수 없음
+		 2. 내부적으로 데이터를 저장하는 방식이 다름. 모든 데이터가 서로 연결된 형태로 관리됨
+		 
+		 */
+		
+		List<Integer> linkedlist1 = new LinkedList<Integer>();
+		
 	}
+
 
 }
